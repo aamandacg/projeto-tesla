@@ -1,0 +1,26 @@
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 5px 20px;
+    }
+
+    .info-carro {
+        margin-top: 20px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .texto-rodape {
+        font-size: 8px;
+    }
+
+    .formulario, .form {
+        width: 100%;
+        left: -100%;
+    }
+}

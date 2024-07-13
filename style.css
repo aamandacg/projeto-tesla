@@ -1,0 +1,120 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0; /* espaçamento externo */
+    padding: 0; /* espaçamento interno */
+    box-sizing: border-box;
+
+    /* asterísco significa TUDO, ele vai aplicar o estilo para tudo. */
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+video, .img-tesla {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* posicionar o item em uma posição exata que eu desejar. */
+    top: 0;
+    left: 0;
+    z-index: -1; /* define quem fica na frente de quem */
+    object-fit: cover; /* faz com que o vídeo cubra toda a tela */
+    filter: brightness(60%);
+}
+
+.logo {
+    filter: brightness(100); /* deixar a logo branco */
+    position: fixed; /* posicionado em relação à janela do navegador e não se move quando a página é rolada */
+    width: 120px;
+}
+
+.item {
+    position: relative;
+    width: 100vw; /* tela toda - altura */
+    height: 100vh; /* tela toda - largura */
+    display: flex; /* habilita algumas propriedades CSS, os de baixo: */
+    justify-content: space-between; /* cria um espaçamento entre os itens */
+    flex-direction: column; /* deixar um item embaixo do outro */
+    scroll-snap-align: start;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    transition: color 0.5s; /* Define a transição de cor para 0.5 segundos */
+}
+
+h1:hover {
+    color: rgba(34, 34, 34, 0.8); /* Cor que o h1 vai mudar quando passar o mouse por cima */
+}
+
+.sub-titulo {
+    color: white;
+}
+
+.info-carro {
+    margin-top: 80px;
+    text-align: center; /* alinha meu item ao centro */
+}
+
+.rodape {
+    text-align: center;
+}
+
+button {
+    background-color: rgba(34,34,34,0.8);
+    color: white;
+    padding: 7px 80px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.teste-drive {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.texto-rodape {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.item.model-3 .rodape {
+    margin-top: auto;
+    margin-bottom: 80px; /* Ajuste conforme necessário */
+}
+
+.item.model-s .rodape {
+    margin-top: auto;
+    margin-bottom: 80px; /* Ajuste conforme necessário */
+}
+
+.item.model-x .rodape {
+    margin-top: auto;
+    margin-bottom: 80px; /* Ajuste conforme necessário */
+}
+
+.formulario {
+    position: fixed;
+    top: 40px;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -35%;
+    transition: 1.5s;
+}
+
+.form {
+    position: fixed;
+    top: 40px;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -35%;
+    transition: 1.5s;
+}

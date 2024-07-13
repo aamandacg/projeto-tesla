@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icone-tesla.png" type="image/x-icon">
+    <link rel="stylesheet" href="./responsivo.css">
+    <title>Tesla</title>
+</head>
+
+<body>
+
+    <img src="./img/logo.png" alt="Logo tesla" class="logo">
+
+    <ul class="lista">
+        <!-- ITEM 1 -->
+        <li class="item">
+
+            <video src="./img/model-y.mp4" muted autoplay loop></video>
+            <!-- Autoplay: para tocar o vídeo automaticamente, 
+         Loop: para ficar em loop, 
+         Muted: para o vídeo começar mutado.-->
+            <div class="info-carro">
+                <h1>Model Y</h1>
+                <p class="sub-titulo">Lease starting at $399/mo.</p>
+            </div>
+
+            <div class="rodape">
+                <button onclick="aparecerFormulario()">Order now</button>
+                <button class="teste-drive" onclick="abrirForm()">Take a test drive</button>
+                <p class="texto-rodape">We do not guarantee immediate availability of your vehicle. Check stock.</p>
+            </div>
+        </li>
+
+        <!-- ITEM 2 -->
+        <li class="item model-3">
+            <img src="./img/model-3.png" alt="imagem carro model-3" class="img-tesla">
+            
+            <div class="info-carro">
+                <h1>Model 3</h1>
+                <p class="sub-titulo">$7,500 Federal Tax Credit.</p>
+            </div>
+
+            <div class="rodape">
+                <button onclick="aparecerFormulario()">Order Now</button>
+                <button class="teste-drive" onclick="abrirForm()">Demo Drive</button>
+            </div>
+
+        </li>
+
+        <!-- ITEM 3 -->
+        <li class="item model-s">
+            <img src="./img/model-s.png" alt="imagem model-s" class="img-tesla">
+            
+            <div class="info-carro">
+                <h1>Model S</h1>
+                <p class="sub-titulo">From $66,490.</p>
+            </div>
+
+            <div class="rodape">
+                <button onclick="aparecerFormulario()">Order Now</button>
+                <button class="teste-drive" onclick="abrirForm()">Demo Drive</button>
+            </div>
+        </li>
+
+        <!-- ITEM 4 -->
+        <li class="item model-x">
+            <img src="./img/model-x.png" alt="imagem model-x" class="img-tesla">
+            
+            <div class="info-carro">
+                <h1>Model X</h1>
+                <p class="sub-titulo">From $63,990.</p>
+            </div>
+
+            <div class="rodape">
+                <button onclick="aparecerFormulario()">Order Now</button>
+                <button class="teste-drive" onclick="abrirForm()">Demo Drive</button>
+            </div>
+        </li>
+    </ul>
+
+    <div class="formulario">
+        <button onclick="desaparecerFormulario()">Fechar</button>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/241940527326052"></script>
+    </div>
+
+    <div class="form">
+        <button onclick="fecharForm()">Fechar</button>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/241940946862062"></script>
+    </div>
+
+</body>
+<script src="./scripts.js"></script>
+</html>
